@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .container{
+    
+} */
+
+.hero{
+    height: 100vh;
+    background-image: url(images/developer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.content{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 15px;
+}
+
+.content h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.large-text{
+    font-size: 60px;
+    /* font-weight: bold; */
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+
+.work-title{
+    background-color: black;
+}
+
+.work-section-title{
+    padding: 25px 0;
+    text-align: center;
+}
+
+.work-section-title h2{
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+
+.work{
+    padding: 75px 0;
+}
+
+.work-section-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.div-33{
+    width: 30%;
+    box-shadow: 0px 0px 5px -1px gray;
+    border-radius: 12px;
+    transition: 0.2s ease-in-out;
+}
+
+.div-33:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+}
+
+.img-container, img{
+    width: 100%;
+}
+
+.content-container{
+    padding: 0 8px;
+    padding-bottom: 40px;
+    text-align: justify;
+}
+
+.content-container h3{
+    margin: 6px 0;
+    font-size: 20px;
+}
+
+.content-container p{
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.contact-section{
+    display: flex;
+    justify-content: center;
+}
+
+.contact{
+    background-color: greenyellow;
+    padding: 30px 10px;
+    padding-bottom: 40px;
+}
+
+.contact-title{
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.contact-content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.about{
+    background-color: goldenrod;
+    padding: 30px 10px;
+    padding-bottom: 40px;
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+@media(max-width: 500px){
+    .hero{
+        height: 50vh;
+    }
+
+    .content h1{
+        font-size: 35px;
+        margin-top: 30px;
+    }
+
+    .large-text{
+        font-size: 50px;
+    }
+
+    .work-section-title {
+        padding: 18px 0;
+    }
+
+    .work-section-title h2{
+        font-size: 30px;
+    }
+
+    .work {
+        padding: 40px 0;
+    }
+
+    .work-section-content{
+        flex-direction: column;
+    }
+
+    .div-33{
+        width: 80%;
+    }
+
+    .content-container {
+        padding-bottom: 25px;
+    }
+
+    .content-container p {
+        margin-bottom: 12px;
+        font-size: 16px;
+    }
+
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .contact, .about {
+        padding: 28px 10px;
+    }
+
+    .contact-title {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+}
