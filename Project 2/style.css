@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gainsboro;
+}
+
+.container{
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.form-container{
+    padding: 25px 20px;
+}
+
+.title{
+    font-size: 30px;
+    letter-spacing: 1.1px;
+}
+
+.small-title{
+    font-size: 20px;
+}
+
+form{
+    margin: 20px 0 5px 0;
+}
+
+.form-fields-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 25px 20px;
+}
+
+.form-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.expand{
+    grid-column: 1/span 2;
+}
+
+.form-fields label{
+    font-size: 18px;
+}
+
+input, textarea, select{
+    padding: 5px;
+    font-size: 17px;
+}
+
+textarea{
+    resize: vertical;
+}
+
+.color-gray{
+    color: gray;
+}
+
+input:focus{
+    outline-color: red;
+}
+
+select:focus{
+    outline-color: red;
+}
+
+
+textarea:focus{
+    outline-color: red;
+}
+
+
+.button-container{
+    margin-top: 50px;
+    text-align: right;
+}
+
+input[type="submit"]{
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: red;
+    color: white;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+@media (max-width: 660px){
+    .container{
+        margin: 50px;
+    }
+
+    .expand{
+        grid-column: 1/span 1;
+    }
+}
