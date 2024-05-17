@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    /* makes 1 rem = 10px */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+}
+
+body{
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+p,ul,a{
+    font-size: 1.7rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    transition: 0.2s ease-in;
+}
+
+a:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-out;
+}
+
+img{
+    width: 100%;
+}
+
+.btn{
+    padding: 10px 15px;
+    transition: 0.2s ease-in;
+}
+
+.btn:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-out;
+}
+
+section{
+    scroll-margin: 50px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px 15px;
+}
+
+/* header */
+
+header{
+    background-color: rgb(0, 0, 98);
+    padding: 8px 0;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    gap: 17px;
+}
+
+nav ul li{
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+    transition: 0.2s ease-in;
+}
+
+nav ul li:hover{
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-out;
+
+}
+
+nav ul li a{
+    color: white;
+}
+
+nav ul li a:hover{
+    opacity: 1.0;
+}
+
+/* hero section */
+
+.hero{
+    background-image: url(images/hero_image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.flex-col-container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    text-align: center;
+}
+
+.flex-col-container h1{
+    font-size: 5rem;
+    color:white;
+    margin-bottom: 10px;
+}
+
+.flex-col-container p{
+    font-size: 1.9rem;
+}
+
+/* music section */
+
+.music{
+    min-height: 80vh;
+    background-color: rgb(41, 0, 79);
+    padding-top: 3rem;
+}
+
+.pos-rel{
+    position: relative;
+}
+
+.justify-flex-start{
+    justify-content: flex-start;
+}
+
+.flex-col-container h2{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+a.btn{
+    margin: 15px 0;
+}
+
+.btn-color1{
+    background-color: rgb(255, 4, 0);
+    color: gainsboro;
+}
+
+.floating-img{
+    position: absolute;
+    bottom: -370px;
+}
+
+/* movie section */
+
+.movie{
+    margin-top: 400px;
+    margin-bottom: 30px;
+    scroll-margin: 80px;
+}
+
+.color-combo{
+    color: black;
+}
+
+.color-combo p{
+    color: rgb(54, 54, 54)
+}
+
+
+.btn-color2{
+    background-color: rgb(41, 0, 79);
+    color: gainsboro;
+}
+
+
+/* availability section */
+
+.availability{
+    max-height: 100vh;
+    background: url(images/video.png) no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.mt-200{
+    margin-top: 200px;
+}
+
+/* gift card section */
+
+.giftcard-section{
+    margin: 70px 0;
+    scroll-margin: 100px;
+}
+
+.giftcard-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.giftcard-img, .giftcard-content{
+    flex-basis: 50%;
+}
+
+.giftcard-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.giftcard-content h3{
+    font-size: 3rem;
+}
+
+.giftcard-content p + p{
+    margin-top: 5px;
+    font-size: 1.6rem;
+}
+
+.giftcard-content hr{
+    margin-top: 15px;
+    width: 100%;
+    border: 1px solid gray;
+}
+
+.giftcard-content a.mt-0{
+    margin-top: 0;
+}
+
+/* footer */
+
+.footerlinks{
+    background-color: rgb(41, 0, 79);
+    padding: 30px 0;
+}
+
+.footerlinks-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footerlinks-content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 25%;
+}
+
+.footerlinks-content h3{
+    color: white;
+}
+
+.footerlinks-content hr{
+    width: 100%;
+    border: 1px solid white;
+}
+
+.links{
+    margin-top: 15px;
+}
+
+.links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.links ul li a{
+    color: gainsboro;
+}
+
+.copyright{
+    background-color: rgb(0, 0, 98);
+    padding: 15px 0;
+}
+
+.copyright p{
+    text-align: center;
+    color: white;
+}
+
+
+/* responsive */
+
+@media(max-width: 768px){
+
+    html{
+        font-size: 50%;
+    }
+
+    nav ul li:hover{
+        border-bottom: 1px solid white;
+        transition: 0.2s ease-in;
+    
+    }
+
+    .floating-img {
+        bottom: -225px;
+    }
+
+    .movie {
+        margin-top: 300px;
+    }
+
+    .giftcard-container{
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .giftcard-img{
+        width: 70%;
+    }
+
+    .giftcard-content{
+        width: 80%;
+    }
+}
+
+@media(max-width: 656px){
+    .logo{
+        font-size: 2.3rem;
+    }
+    nav ul {
+        gap: 10px;
+    }
+    .flex-col-container h1 {
+        font-size: 4rem;
+    }
+
+    .flex-col-container h2 {
+        margin-bottom: 8px;
+    }
+
+    a.btn {
+        margin: 10px 0;
+    }
+
+    .flex-col-container {
+        min-height: 80vh;
+    }
+
+    .floating-img {
+        bottom: -215px;
+    }
+
+    .movie {
+        margin-top: 260px;
+    }
+
+}
+
+@media(max-width: 460px){
+    .footerlinks-container{
+        flex-direction: column;
+    }
+}
