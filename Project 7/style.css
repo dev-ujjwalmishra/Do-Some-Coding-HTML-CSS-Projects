@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+/* header */
+
+header{
+    padding: 10px 15px;
+    border: 1px solid gainsboro;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left,.middle,.right{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.left img:last-child{
+    width: 150px;
+}
+
+.middle{
+    position: relative;
+}
+
+.middle input{
+    padding: 8px;
+    border: 1px solid gray;
+    font-size: 17px;
+    width: 400px;
+}
+
+.middle input:focus{
+    outline: none;
+}
+
+.search-icon{
+    display: inline-block;
+    background-color: gainsboro;
+    padding: 5px 15px;
+    position: absolute;
+    right: 49px;
+}
+
+.mic-icon{
+    background-color: gainsboro;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* main */
+
+main{
+    display: flex;
+    gap: 5px;
+    padding: 10px 15px;
+}
+
+.left-side-bar{
+    display: flex;
+    flex-direction: column;
+    padding-right: 15px;
+    gap: 25px;
+}
+
+.left-side-bar img:hover{
+    cursor: pointer;
+}
+
+.right-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.rigth-container-quick-filters{
+    display: flex;
+    gap: 25px;
+    padding-left: 20px;
+}
+
+.rigth-container-quick-filters p{
+    background-color: gainsboro;
+    padding: 5px 20px;
+    border: 1px solid gray;
+    border-radius: 50px;
+}
+
+.rigth-container-quick-filters p:first-child{
+    background-color: black;
+    color: gainsboro;
+}
+
+.right-container-contents{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 30px 15px;
+    background-color: gainsboro;
+    padding: 10px;
+}
+
+.videos{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.info-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.info-avtar-container{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.info-container-content{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.info-container-content h3{
+    font-size: 17px;
+}
+
+.info-container-content p{
+    font-size: 16px;
+}
+
+/* responsive */
+
+@media(max-width: 1050px){
+
+    .left img, .middle img, .right img {
+        width: 33px;
+    }
+
+    .left img:first-child{
+        width: 28px;
+    }
+
+    .left img:last-child {
+        width: 110px;
+    }
+
+    .middle input {
+        padding: 4px;
+        font-size: 15px;
+        width: 320px;
+    }
+
+    .middle .search-icon{
+        width: 50px;
+        right: 58px;
+    }
+
+    .left-side-bar img{
+        width: 29px;
+    }
+
+    .quick-filters {
+        gap: 20px;
+        padding-left: 15px;
+    }
+
+    .rigth-container-quick-filters p {
+        padding: 4px 17px;
+        font-size: 15px;
+    }
+
+    .right-container-contents{
+        gap: 20px 15px;
+    }
+
+    .info-avtar-container img{
+        width: 35px;
+    }
+
+    .info-container-content h3 {
+        font-size: 15px;
+    }
+    
+    .info-container-content p {
+        font-size: 14px;
+    }
+    
+}
+
+@media(max-width: 845px){
+
+    .left img, .middle img, .right img {
+        width: 28px;
+    }
+
+    .left img:first-child{
+        width: 25px;
+    }
+
+    .left img:last-child {
+        width: 90px;
+    }
+
+    .middle input {
+        font-size: 14px;
+        width: 200px;
+    }
+
+    .middle .search-icon{
+        width: 50px;
+        right: 53px;
+        padding: 4px 15px;
+    }
+
+    .left-side-bar img{
+        width: 27px;
+    }
+
+    .rigth-container-quick-filters {
+        gap: 18px;
+        padding-left: 15px;
+    }
+
+    .rigth-container-quick-filters p {
+        padding: 4px 15px;
+        font-size: 13px;
+    }
+
+    .info-avtar-container img{
+        width: 33px;
+    }
+
+    .info-container-content h3 {
+        font-size: 14px;
+    }
+    
+    .info-container-content p {
+        font-size: 12px;
+    }
+    
+}
