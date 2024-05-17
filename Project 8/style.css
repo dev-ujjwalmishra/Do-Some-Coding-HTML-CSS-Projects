@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* .container{
+    width: 1440px;
+    margin: 0 auto;
+} */
+
+.container-content{
+    display: flex;
+    /* align-items: flex-start; */
+    /* gap: 20px; */
+}
+
+/* side-bar */
+.side-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    gap: 10px;
+    background-color: gainsboro;
+    border: 1px solid gray;
+    /* min-height: 100%; */
+}
+
+.logo h1{
+    text-align: center;
+    font-size: 27px;
+    padding: 10px 15px;
+}
+
+.side-bar-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.side-bar-links a{
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    border-top: 1px solid gray;
+    color: black;
+    transition: 0.2s ease-in;
+}
+
+.side-bar-links a:hover{
+    cursor: pointer;
+    /* color: gray; */
+    background-color: gray;
+    /* opacity: 0.8; */
+    transition: 0.2s ease-in;
+}
+
+.side-bar-links a:last-child{
+    border-bottom: 1px solid gray;
+}
+
+/* content */
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 40px 10px;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    scroll-margin: 20px;
+}
+
+.section h2{
+    font-size: 25px;
+}
+
+.section ul{
+    padding-left: 40px;
+}
+
+
+code{
+    white-space: pre-line;
+    padding: 30px 40px;
+    background-color: gainsboro;
+    font-size: 14px;
+}
+
+
+
+
+@media(max-width: 500px){
+    .container-content{
+        flex-direction: column;
+    }
+}
